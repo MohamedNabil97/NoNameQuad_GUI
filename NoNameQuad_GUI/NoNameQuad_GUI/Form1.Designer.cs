@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.textbox_alpha_t1 = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.pictureBox_inverseK_t1 = new System.Windows.Forms.PictureBox();
             this.comboBox_legNumber_t1 = new System.Windows.Forms.ComboBox();
             this.comboBox_servo_t1 = new System.Windows.Forms.ComboBox();
@@ -46,8 +46,8 @@
             this.pictureBox_servos_t2 = new System.Windows.Forms.PictureBox();
             this.comboBox_legChoice_t2 = new System.Windows.Forms.ComboBox();
             this.button_apply_t2 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textbox_zHold_t2 = new System.Windows.Forms.TextBox();
+            this.textbox_yHold_t2 = new System.Windows.Forms.TextBox();
             this.label_zHold_t2 = new System.Windows.Forms.Label();
             this.label_yHold_t2 = new System.Windows.Forms.Label();
             this.label_xHold_t2 = new System.Windows.Forms.Label();
@@ -65,8 +65,10 @@
             this.label_Serv90_t3 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.textbox_xHold_t2 = new System.Windows.Forms.TextBox();
+            this.textbox_alpha_t1 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
-            this.textbox_alpha_t1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_inverseK_t1)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_servos_t2)).BeginInit();
@@ -75,7 +77,7 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.textbox_alpha_t1);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
@@ -85,26 +87,27 @@
             this.tabControl1.Size = new System.Drawing.Size(605, 298);
             this.tabControl1.TabIndex = 0;
             // 
-            // textbox_alpha_t1
+            // tabPage1
             // 
-            this.textbox_alpha_t1.Controls.Add(this.pictureBox_inverseK_t1);
-            this.textbox_alpha_t1.Controls.Add(this.comboBox_legNumber_t1);
-            this.textbox_alpha_t1.Controls.Add(this.comboBox_servo_t1);
-            this.textbox_alpha_t1.Controls.Add(this.label_gamma_t1);
-            this.textbox_alpha_t1.Controls.Add(this.label_beta_t1);
-            this.textbox_alpha_t1.Controls.Add(this.label_alpha_t1);
-            this.textbox_alpha_t1.Controls.Add(this.label_servo_t1);
-            this.textbox_alpha_t1.Controls.Add(this.label_legnumber_t1);
-            this.textbox_alpha_t1.Controls.Add(this.textbox_gamma_t1);
-            this.textbox_alpha_t1.Controls.Add(this.textbox_beta_t1);
-            this.textbox_alpha_t1.Controls.Add(this.button_applyChanges_t1);
-            this.textbox_alpha_t1.Location = new System.Drawing.Point(4, 22);
-            this.textbox_alpha_t1.Name = "textbox_alpha_t1";
-            this.textbox_alpha_t1.Padding = new System.Windows.Forms.Padding(3);
-            this.textbox_alpha_t1.Size = new System.Drawing.Size(597, 272);
-            this.textbox_alpha_t1.TabIndex = 0;
-            this.textbox_alpha_t1.Text = "Servo Control";
-            this.textbox_alpha_t1.UseVisualStyleBackColor = true;
+            this.tabPage1.Controls.Add(this.textbox_alpha_t1);
+            this.tabPage1.Controls.Add(this.pictureBox_inverseK_t1);
+            this.tabPage1.Controls.Add(this.comboBox_legNumber_t1);
+            this.tabPage1.Controls.Add(this.comboBox_servo_t1);
+            this.tabPage1.Controls.Add(this.label_gamma_t1);
+            this.tabPage1.Controls.Add(this.label_beta_t1);
+            this.tabPage1.Controls.Add(this.label_alpha_t1);
+            this.tabPage1.Controls.Add(this.label_servo_t1);
+            this.tabPage1.Controls.Add(this.label_legnumber_t1);
+            this.tabPage1.Controls.Add(this.textbox_gamma_t1);
+            this.tabPage1.Controls.Add(this.textbox_beta_t1);
+            this.tabPage1.Controls.Add(this.button_applyChanges_t1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(597, 272);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Servo Control";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // pictureBox_inverseK_t1
             // 
@@ -212,11 +215,12 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.textbox_xHold_t2);
             this.tabPage2.Controls.Add(this.pictureBox_servos_t2);
             this.tabPage2.Controls.Add(this.comboBox_legChoice_t2);
             this.tabPage2.Controls.Add(this.button_apply_t2);
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.textbox_zHold_t2);
+            this.tabPage2.Controls.Add(this.textbox_yHold_t2);
             this.tabPage2.Controls.Add(this.label_zHold_t2);
             this.tabPage2.Controls.Add(this.label_yHold_t2);
             this.tabPage2.Controls.Add(this.label_xHold_t2);
@@ -230,7 +234,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(597, 272);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Inverse Kinematics";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // pictureBox_servos_t2
@@ -260,19 +264,19 @@
             this.button_apply_t2.Text = "Apply Changes";
             this.button_apply_t2.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // textbox_zHold_t2
             // 
-            this.textBox3.Location = new System.Drawing.Point(143, 200);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 10;
+            this.textbox_zHold_t2.Location = new System.Drawing.Point(143, 200);
+            this.textbox_zHold_t2.Name = "textbox_zHold_t2";
+            this.textbox_zHold_t2.Size = new System.Drawing.Size(100, 20);
+            this.textbox_zHold_t2.TabIndex = 10;
             // 
-            // textBox2
+            // textbox_yHold_t2
             // 
-            this.textBox2.Location = new System.Drawing.Point(143, 158);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 9;
+            this.textbox_yHold_t2.Location = new System.Drawing.Point(143, 158);
+            this.textbox_yHold_t2.Name = "textbox_yHold_t2";
+            this.textbox_yHold_t2.Size = new System.Drawing.Size(100, 20);
+            this.textbox_yHold_t2.TabIndex = 9;
             // 
             // label_zHold_t2
             // 
@@ -359,7 +363,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(597, 272);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.Text = "Servo Calibration";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // button_Serv0_t3
@@ -434,6 +438,21 @@
             this.tabPage5.Size = new System.Drawing.Size(200, 100);
             this.tabPage5.TabIndex = 0;
             // 
+            // textbox_xHold_t2
+            // 
+            this.textbox_xHold_t2.Location = new System.Drawing.Point(143, 119);
+            this.textbox_xHold_t2.Name = "textbox_xHold_t2";
+            this.textbox_xHold_t2.Size = new System.Drawing.Size(100, 20);
+            this.textbox_xHold_t2.TabIndex = 14;
+            // 
+            // textbox_alpha_t1
+            // 
+            this.textbox_alpha_t1.Location = new System.Drawing.Point(123, 81);
+            this.textbox_alpha_t1.Name = "textbox_alpha_t1";
+            this.textbox_alpha_t1.Size = new System.Drawing.Size(100, 20);
+            this.textbox_alpha_t1.TabIndex = 25;
+            this.textbox_alpha_t1.UseWaitCursor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -443,8 +462,8 @@
             this.Name = "Form1";
             this.Text = "DEVELOPMENT GUI ";
             this.tabControl1.ResumeLayout(false);
-            this.textbox_alpha_t1.ResumeLayout(false);
-            this.textbox_alpha_t1.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_inverseK_t1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
@@ -458,7 +477,7 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage textbox_alpha_t1;
+        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
@@ -467,8 +486,8 @@
 
         private System.Windows.Forms.Label label_legNumber_t2;
         private System.Windows.Forms.Button button_apply_t2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textbox_zHold_t2;
+        private System.Windows.Forms.TextBox textbox_yHold_t2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label_zHold_t2;
         private System.Windows.Forms.Label label_yHold_t2;
@@ -499,8 +518,8 @@
         private System.Windows.Forms.TextBox textbox_beta_t1;
     //    private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button_applyChanges_t1;
-
-
+        private System.Windows.Forms.TextBox textbox_xHold_t2;
+        private System.Windows.Forms.TextBox textbox_alpha_t1;
     }
 }
 
