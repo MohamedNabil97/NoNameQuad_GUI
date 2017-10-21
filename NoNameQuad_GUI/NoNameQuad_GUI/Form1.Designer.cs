@@ -31,39 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.textbox_alpha_t1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-
-            this.label_legNumber_t2 = new System.Windows.Forms.Label();
-            this.label_currCoordinates_t2 = new System.Windows.Forms.Label();
-            this.label_xCoord_t2 = new System.Windows.Forms.Label();
-            this.label_yCoord_t2 = new System.Windows.Forms.Label();
-            this.label_zCoord_t2 = new System.Windows.Forms.Label();
-            this.label_xHold_t2 = new System.Windows.Forms.Label();
-            this.label_yHold_t2 = new System.Windows.Forms.Label();
-            this.label_zHold_t2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button_apply_t2 = new System.Windows.Forms.Button();
-            this.comboBox_legChoice_t2 = new System.Windows.Forms.ComboBox();
-            this.pictureBox_servos_t2 = new System.Windows.Forms.PictureBox();
-            this.tabControl1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_servos_t2)).BeginInit();
-
-            this.label_Serv90_t3 = new System.Windows.Forms.Label();
-            this.label_Serv180_t3 = new System.Windows.Forms.Label();
-            this.label_Serv0_t3 = new System.Windows.Forms.Label();
-            this.button_Serv90_t3 = new System.Windows.Forms.Button();
-            this.button_Serv180_t3 = new System.Windows.Forms.Button();
-            this.button_Serv0_t3 = new System.Windows.Forms.Button();
-            this.tabControl1.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-
             this.pictureBox_inverseK_t1 = new System.Windows.Forms.PictureBox();
             this.comboBox_legNumber_t1 = new System.Windows.Forms.ComboBox();
             this.comboBox_servo_t1 = new System.Windows.Forms.ComboBox();
@@ -74,13 +41,36 @@
             this.label_legnumber_t1 = new System.Windows.Forms.Label();
             this.textbox_gamma_t1 = new System.Windows.Forms.TextBox();
             this.textbox_beta_t1 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button_applyChanges_t1 = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pictureBox_servos_t2 = new System.Windows.Forms.PictureBox();
+            this.comboBox_legChoice_t2 = new System.Windows.Forms.ComboBox();
+            this.button_apply_t2 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label_zHold_t2 = new System.Windows.Forms.Label();
+            this.label_yHold_t2 = new System.Windows.Forms.Label();
+            this.label_xHold_t2 = new System.Windows.Forms.Label();
+            this.label_zCoord_t2 = new System.Windows.Forms.Label();
+            this.label_yCoord_t2 = new System.Windows.Forms.Label();
+            this.label_xCoord_t2 = new System.Windows.Forms.Label();
+            this.label_currCoordinates_t2 = new System.Windows.Forms.Label();
+            this.label_legNumber_t2 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button_Serv0_t3 = new System.Windows.Forms.Button();
+            this.button_Serv180_t3 = new System.Windows.Forms.Button();
+            this.button_Serv90_t3 = new System.Windows.Forms.Button();
+            this.label_Serv0_t3 = new System.Windows.Forms.Label();
+            this.label_Serv180_t3 = new System.Windows.Forms.Label();
+            this.label_Serv90_t3 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.textbox_alpha_t1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_inverseK_t1)).BeginInit();
-
-
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_servos_t2)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -107,7 +97,6 @@
             this.textbox_alpha_t1.Controls.Add(this.label_legnumber_t1);
             this.textbox_alpha_t1.Controls.Add(this.textbox_gamma_t1);
             this.textbox_alpha_t1.Controls.Add(this.textbox_beta_t1);
-            this.textbox_alpha_t1.Controls.Add(this.textBox1);
             this.textbox_alpha_t1.Controls.Add(this.button_applyChanges_t1);
             this.textbox_alpha_t1.Location = new System.Drawing.Point(4, 22);
             this.textbox_alpha_t1.Name = "textbox_alpha_t1";
@@ -116,55 +105,6 @@
             this.textbox_alpha_t1.TabIndex = 0;
             this.textbox_alpha_t1.Text = "Servo Control";
             this.textbox_alpha_t1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.pictureBox_servos_t2);
-            this.tabPage2.Controls.Add(this.comboBox_legChoice_t2);
-            this.tabPage2.Controls.Add(this.button_apply_t2);
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Controls.Add(this.textBox1);
-            this.tabPage2.Controls.Add(this.label_zHold_t2);
-            this.tabPage2.Controls.Add(this.label_yHold_t2);
-            this.tabPage2.Controls.Add(this.label_xHold_t2);
-            this.tabPage2.Controls.Add(this.label_zCoord_t2);
-            this.tabPage2.Controls.Add(this.label_yCoord_t2);
-            this.tabPage2.Controls.Add(this.label_xCoord_t2);
-            this.tabPage2.Controls.Add(this.label_currCoordinates_t2);
-            this.tabPage2.Controls.Add(this.label_legNumber_t2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(597, 272);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.button_Serv0_t3);
-            this.tabPage3.Controls.Add(this.button_Serv180_t3);
-            this.tabPage3.Controls.Add(this.button_Serv90_t3);
-            this.tabPage3.Controls.Add(this.label_Serv0_t3);
-            this.tabPage3.Controls.Add(this.label_Serv180_t3);
-            this.tabPage3.Controls.Add(this.label_Serv90_t3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(597, 272);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(597, 272);
-            this.tabPage4.TabIndex = 0;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // pictureBox_inverseK_t1
             // 
@@ -246,7 +186,7 @@
             // 
             // textbox_gamma_t1
             // 
-            this.textbox_gamma_t1.Location = new System.Drawing.Point(114, 155);
+            this.textbox_gamma_t1.Location = new System.Drawing.Point(123, 155);
             this.textbox_gamma_t1.Name = "textbox_gamma_t1";
             this.textbox_gamma_t1.Size = new System.Drawing.Size(100, 20);
             this.textbox_gamma_t1.TabIndex = 16;
@@ -254,19 +194,11 @@
             // 
             // textbox_beta_t1
             // 
-            this.textbox_beta_t1.Location = new System.Drawing.Point(114, 113);
+            this.textbox_beta_t1.Location = new System.Drawing.Point(123, 113);
             this.textbox_beta_t1.Name = "textbox_beta_t1";
             this.textbox_beta_t1.Size = new System.Drawing.Size(100, 20);
             this.textbox_beta_t1.TabIndex = 15;
             this.textbox_beta_t1.UseWaitCursor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(114, 81);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 14;
-            this.textBox1.UseWaitCursor = true;
             // 
             // button_applyChanges_t1
             // 
@@ -278,171 +210,28 @@
             this.button_applyChanges_t1.UseVisualStyleBackColor = true;
             this.button_applyChanges_t1.UseWaitCursor = true;
             // 
-            // label_Serv90_t3
+            // tabPage2
             // 
-            this.label_Serv90_t3.AutoSize = true;
-            this.label_Serv90_t3.Location = new System.Drawing.Point(11, 30);
-            this.label_Serv90_t3.Name = "label_Serv90_t3";
-            this.label_Serv90_t3.Size = new System.Drawing.Size(115, 13);
-            this.label_Serv90_t3.TabIndex = 0;
-            this.label_Serv90_t3.Text = "Calibrate Servos to 90°";
-            // 
-            // label_Serv180_t3
-            // 
-            this.label_Serv180_t3.AutoSize = true;
-            this.label_Serv180_t3.Location = new System.Drawing.Point(11, 70);
-            this.label_Serv180_t3.Name = "label_Serv180_t3";
-            this.label_Serv180_t3.Size = new System.Drawing.Size(121, 13);
-            this.label_Serv180_t3.TabIndex = 1;
-            this.label_Serv180_t3.Text = "Calibrate Servos to 180°";
-            this.label_Serv180_t3.Click += new System.EventHandler(this.Serv180_Click);
-            // 
-            // label_Serv0_t3
-            // 
-            this.label_Serv0_t3.AutoSize = true;
-            this.label_Serv0_t3.Location = new System.Drawing.Point(11, 110);
-            this.label_Serv0_t3.Name = "label_Serv0_t3";
-            this.label_Serv0_t3.Size = new System.Drawing.Size(109, 13);
-            this.label_Serv0_t3.TabIndex = 2;
-            this.label_Serv0_t3.Text = "Calibrate Servos to 0°";
-            // 
-            // button_Serv90_t3
-            // 
-            this.button_Serv90_t3.Location = new System.Drawing.Point(148, 30);
-            this.button_Serv90_t3.Name = "button_Serv90_t3";
-            this.button_Serv90_t3.Size = new System.Drawing.Size(75, 23);
-            this.button_Serv90_t3.TabIndex = 3;
-            this.button_Serv90_t3.Text = "Wosh";
-            this.button_Serv90_t3.UseVisualStyleBackColor = true;
-            // 
-            // button_Serv180_t3
-            // 
-            this.button_Serv180_t3.Location = new System.Drawing.Point(148, 70);
-            this.button_Serv180_t3.Name = "button_Serv180_t3";
-            this.button_Serv180_t3.Size = new System.Drawing.Size(75, 23);
-            this.button_Serv180_t3.TabIndex = 4;
-            this.button_Serv180_t3.Text = "Shazam";
-            this.button_Serv180_t3.UseVisualStyleBackColor = true;
-            // 
-            // button_Serv0_t3
-            // 
-            this.button_Serv0_t3.Location = new System.Drawing.Point(148, 110);
-            this.button_Serv0_t3.Name = "button_Serv0_t3";
-            this.button_Serv0_t3.Size = new System.Drawing.Size(75, 23);
-            this.button_Serv0_t3.TabIndex = 5;
-            this.button_Serv0_t3.Text = "idk";
-            this.button_Serv0_t3.UseVisualStyleBackColor = true;
-            this.button_Serv0_t3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label_legNumber_t2
-            // 
-            this.label_legNumber_t2.AutoSize = true;
-            this.label_legNumber_t2.Location = new System.Drawing.Point(39, 26);
-            this.label_legNumber_t2.Name = "label_legNumber_t2";
-            this.label_legNumber_t2.Size = new System.Drawing.Size(65, 13);
-            this.label_legNumber_t2.TabIndex = 0;
-            this.label_legNumber_t2.Text = "Leg Number";
-            // 
-            // label_currCoordinates_t2
-            // 
-            this.label_currCoordinates_t2.AutoSize = true;
-            this.label_currCoordinates_t2.Location = new System.Drawing.Point(39, 63);
-            this.label_currCoordinates_t2.Name = "label_currCoordinates_t2";
-            this.label_currCoordinates_t2.Size = new System.Drawing.Size(100, 13);
-            this.label_currCoordinates_t2.TabIndex = 1;
-            this.label_currCoordinates_t2.Text = "Current Coordinates";
-            // 
-            // label_xCoord_t2
-            // 
-            this.label_xCoord_t2.AutoSize = true;
-            this.label_xCoord_t2.Location = new System.Drawing.Point(140, 88);
-            this.label_xCoord_t2.Name = "label_xCoord_t2";
-            this.label_xCoord_t2.Size = new System.Drawing.Size(48, 13);
-            this.label_xCoord_t2.TabIndex = 2;
-            this.label_xCoord_t2.Text = "X: NULL";
-            // 
-            // label_yCoord_t2
-            // 
-            this.label_yCoord_t2.AutoSize = true;
-            this.label_yCoord_t2.Location = new System.Drawing.Point(216, 88);
-            this.label_yCoord_t2.Name = "label_yCoord_t2";
-            this.label_yCoord_t2.Size = new System.Drawing.Size(48, 13);
-            this.label_yCoord_t2.TabIndex = 3;
-            this.label_yCoord_t2.Text = "Y: NULL";
-            // 
-            // label_zCoord_t2
-            // 
-            this.label_zCoord_t2.AutoSize = true;
-            this.label_zCoord_t2.Location = new System.Drawing.Point(287, 88);
-            this.label_zCoord_t2.Name = "label_zCoord_t2";
-            this.label_zCoord_t2.Size = new System.Drawing.Size(48, 13);
-            this.label_zCoord_t2.TabIndex = 4;
-            this.label_zCoord_t2.Text = "Z: NULL";
-            // 
-            // label_xHold_t2
-            // 
-            this.label_xHold_t2.AutoSize = true;
-            this.label_xHold_t2.Location = new System.Drawing.Point(61, 119);
-            this.label_xHold_t2.Name = "label_xHold_t2";
-            this.label_xHold_t2.Size = new System.Drawing.Size(14, 13);
-            this.label_xHold_t2.TabIndex = 5;
-            this.label_xHold_t2.Text = "X";
-            // 
-            // label_yHold_t2
-            // 
-            this.label_yHold_t2.AutoSize = true;
-            this.label_yHold_t2.Location = new System.Drawing.Point(61, 161);
-            this.label_yHold_t2.Name = "label_yHold_t2";
-            this.label_yHold_t2.Size = new System.Drawing.Size(14, 13);
-            this.label_yHold_t2.TabIndex = 6;
-            this.label_yHold_t2.Text = "Y";
-            // 
-            // label_zHold_t2
-            // 
-            this.label_zHold_t2.AutoSize = true;
-            this.label_zHold_t2.Location = new System.Drawing.Point(61, 207);
-            this.label_zHold_t2.Name = "label_zHold_t2";
-            this.label_zHold_t2.Size = new System.Drawing.Size(14, 13);
-            this.label_zHold_t2.TabIndex = 7;
-            this.label_zHold_t2.Text = "Z";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(143, 119);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 8;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(143, 158);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 9;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(143, 200);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 10;
-            // 
-            // button_apply_t2
-            // 
-            this.button_apply_t2.Location = new System.Drawing.Point(234, 231);
-            this.button_apply_t2.Name = "button_apply_t2";
-            this.button_apply_t2.Size = new System.Drawing.Size(92, 23);
-            this.button_apply_t2.TabIndex = 11;
-            this.button_apply_t2.Text = "Apply Changes";
-            this.button_apply_t2.UseVisualStyleBackColor = true;
-            // 
-            // comboBox_legChoice_t2
-            // 
-            this.comboBox_legChoice_t2.FormattingEnabled = true;
-            this.comboBox_legChoice_t2.Location = new System.Drawing.Point(143, 18);
-            this.comboBox_legChoice_t2.Name = "comboBox_legChoice_t2";
-            this.comboBox_legChoice_t2.Size = new System.Drawing.Size(100, 21);
-            this.comboBox_legChoice_t2.TabIndex = 12;
+            this.tabPage2.Controls.Add(this.pictureBox_servos_t2);
+            this.tabPage2.Controls.Add(this.comboBox_legChoice_t2);
+            this.tabPage2.Controls.Add(this.button_apply_t2);
+            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.label_zHold_t2);
+            this.tabPage2.Controls.Add(this.label_yHold_t2);
+            this.tabPage2.Controls.Add(this.label_xHold_t2);
+            this.tabPage2.Controls.Add(this.label_zCoord_t2);
+            this.tabPage2.Controls.Add(this.label_yCoord_t2);
+            this.tabPage2.Controls.Add(this.label_xCoord_t2);
+            this.tabPage2.Controls.Add(this.label_currCoordinates_t2);
+            this.tabPage2.Controls.Add(this.label_legNumber_t2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(597, 272);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // pictureBox_servos_t2
             // 
@@ -454,6 +243,197 @@
             this.pictureBox_servos_t2.TabIndex = 13;
             this.pictureBox_servos_t2.TabStop = false;
             // 
+            // comboBox_legChoice_t2
+            // 
+            this.comboBox_legChoice_t2.FormattingEnabled = true;
+            this.comboBox_legChoice_t2.Location = new System.Drawing.Point(143, 18);
+            this.comboBox_legChoice_t2.Name = "comboBox_legChoice_t2";
+            this.comboBox_legChoice_t2.Size = new System.Drawing.Size(100, 21);
+            this.comboBox_legChoice_t2.TabIndex = 12;
+            // 
+            // button_apply_t2
+            // 
+            this.button_apply_t2.Location = new System.Drawing.Point(234, 231);
+            this.button_apply_t2.Name = "button_apply_t2";
+            this.button_apply_t2.Size = new System.Drawing.Size(92, 23);
+            this.button_apply_t2.TabIndex = 11;
+            this.button_apply_t2.Text = "Apply Changes";
+            this.button_apply_t2.UseVisualStyleBackColor = true;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(143, 200);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 10;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(143, 158);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 9;
+            // 
+            // label_zHold_t2
+            // 
+            this.label_zHold_t2.AutoSize = true;
+            this.label_zHold_t2.Location = new System.Drawing.Point(61, 207);
+            this.label_zHold_t2.Name = "label_zHold_t2";
+            this.label_zHold_t2.Size = new System.Drawing.Size(14, 13);
+            this.label_zHold_t2.TabIndex = 7;
+            this.label_zHold_t2.Text = "Z";
+            // 
+            // label_yHold_t2
+            // 
+            this.label_yHold_t2.AutoSize = true;
+            this.label_yHold_t2.Location = new System.Drawing.Point(61, 161);
+            this.label_yHold_t2.Name = "label_yHold_t2";
+            this.label_yHold_t2.Size = new System.Drawing.Size(14, 13);
+            this.label_yHold_t2.TabIndex = 6;
+            this.label_yHold_t2.Text = "Y";
+            // 
+            // label_xHold_t2
+            // 
+            this.label_xHold_t2.AutoSize = true;
+            this.label_xHold_t2.Location = new System.Drawing.Point(61, 119);
+            this.label_xHold_t2.Name = "label_xHold_t2";
+            this.label_xHold_t2.Size = new System.Drawing.Size(14, 13);
+            this.label_xHold_t2.TabIndex = 5;
+            this.label_xHold_t2.Text = "X";
+            // 
+            // label_zCoord_t2
+            // 
+            this.label_zCoord_t2.AutoSize = true;
+            this.label_zCoord_t2.Location = new System.Drawing.Point(287, 88);
+            this.label_zCoord_t2.Name = "label_zCoord_t2";
+            this.label_zCoord_t2.Size = new System.Drawing.Size(48, 13);
+            this.label_zCoord_t2.TabIndex = 4;
+            this.label_zCoord_t2.Text = "Z: NULL";
+            // 
+            // label_yCoord_t2
+            // 
+            this.label_yCoord_t2.AutoSize = true;
+            this.label_yCoord_t2.Location = new System.Drawing.Point(216, 88);
+            this.label_yCoord_t2.Name = "label_yCoord_t2";
+            this.label_yCoord_t2.Size = new System.Drawing.Size(48, 13);
+            this.label_yCoord_t2.TabIndex = 3;
+            this.label_yCoord_t2.Text = "Y: NULL";
+            // 
+            // label_xCoord_t2
+            // 
+            this.label_xCoord_t2.AutoSize = true;
+            this.label_xCoord_t2.Location = new System.Drawing.Point(140, 88);
+            this.label_xCoord_t2.Name = "label_xCoord_t2";
+            this.label_xCoord_t2.Size = new System.Drawing.Size(48, 13);
+            this.label_xCoord_t2.TabIndex = 2;
+            this.label_xCoord_t2.Text = "X: NULL";
+            // 
+            // label_currCoordinates_t2
+            // 
+            this.label_currCoordinates_t2.AutoSize = true;
+            this.label_currCoordinates_t2.Location = new System.Drawing.Point(39, 63);
+            this.label_currCoordinates_t2.Name = "label_currCoordinates_t2";
+            this.label_currCoordinates_t2.Size = new System.Drawing.Size(100, 13);
+            this.label_currCoordinates_t2.TabIndex = 1;
+            this.label_currCoordinates_t2.Text = "Current Coordinates";
+            // 
+            // label_legNumber_t2
+            // 
+            this.label_legNumber_t2.AutoSize = true;
+            this.label_legNumber_t2.Location = new System.Drawing.Point(39, 26);
+            this.label_legNumber_t2.Name = "label_legNumber_t2";
+            this.label_legNumber_t2.Size = new System.Drawing.Size(65, 13);
+            this.label_legNumber_t2.TabIndex = 0;
+            this.label_legNumber_t2.Text = "Leg Number";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.button_Serv0_t3);
+            this.tabPage3.Controls.Add(this.button_Serv180_t3);
+            this.tabPage3.Controls.Add(this.button_Serv90_t3);
+            this.tabPage3.Controls.Add(this.label_Serv0_t3);
+            this.tabPage3.Controls.Add(this.label_Serv180_t3);
+            this.tabPage3.Controls.Add(this.label_Serv90_t3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(597, 272);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // button_Serv0_t3
+            // 
+            this.button_Serv0_t3.Location = new System.Drawing.Point(148, 110);
+            this.button_Serv0_t3.Name = "button_Serv0_t3";
+            this.button_Serv0_t3.Size = new System.Drawing.Size(75, 23);
+            this.button_Serv0_t3.TabIndex = 5;
+            this.button_Serv0_t3.Text = "idk";
+            this.button_Serv0_t3.UseVisualStyleBackColor = true;
+            this.button_Serv0_t3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button_Serv180_t3
+            // 
+            this.button_Serv180_t3.Location = new System.Drawing.Point(148, 70);
+            this.button_Serv180_t3.Name = "button_Serv180_t3";
+            this.button_Serv180_t3.Size = new System.Drawing.Size(75, 23);
+            this.button_Serv180_t3.TabIndex = 4;
+            this.button_Serv180_t3.Text = "Shazam";
+            this.button_Serv180_t3.UseVisualStyleBackColor = true;
+            // 
+            // button_Serv90_t3
+            // 
+            this.button_Serv90_t3.Location = new System.Drawing.Point(148, 30);
+            this.button_Serv90_t3.Name = "button_Serv90_t3";
+            this.button_Serv90_t3.Size = new System.Drawing.Size(75, 23);
+            this.button_Serv90_t3.TabIndex = 3;
+            this.button_Serv90_t3.Text = "Wosh";
+            this.button_Serv90_t3.UseVisualStyleBackColor = true;
+            // 
+            // label_Serv0_t3
+            // 
+            this.label_Serv0_t3.AutoSize = true;
+            this.label_Serv0_t3.Location = new System.Drawing.Point(11, 110);
+            this.label_Serv0_t3.Name = "label_Serv0_t3";
+            this.label_Serv0_t3.Size = new System.Drawing.Size(109, 13);
+            this.label_Serv0_t3.TabIndex = 2;
+            this.label_Serv0_t3.Text = "Calibrate Servos to 0°";
+            // 
+            // label_Serv180_t3
+            // 
+            this.label_Serv180_t3.AutoSize = true;
+            this.label_Serv180_t3.Location = new System.Drawing.Point(11, 70);
+            this.label_Serv180_t3.Name = "label_Serv180_t3";
+            this.label_Serv180_t3.Size = new System.Drawing.Size(121, 13);
+            this.label_Serv180_t3.TabIndex = 1;
+            this.label_Serv180_t3.Text = "Calibrate Servos to 180°";
+            this.label_Serv180_t3.Click += new System.EventHandler(this.Serv180_Click);
+            // 
+            // label_Serv90_t3
+            // 
+            this.label_Serv90_t3.AutoSize = true;
+            this.label_Serv90_t3.Location = new System.Drawing.Point(11, 30);
+            this.label_Serv90_t3.Name = "label_Serv90_t3";
+            this.label_Serv90_t3.Size = new System.Drawing.Size(115, 13);
+            this.label_Serv90_t3.TabIndex = 0;
+            this.label_Serv90_t3.Text = "Calibrate Servos to 90°";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(597, 272);
+            this.tabPage4.TabIndex = 0;
+            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(0, 0);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(200, 100);
+            this.tabPage5.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -463,21 +443,15 @@
             this.Name = "Form1";
             this.Text = "DEVELOPMENT GUI ";
             this.tabControl1.ResumeLayout(false);
-
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_servos_t2)).EndInit();
-            this.ResumeLayout(false);
-
-
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-
             this.textbox_alpha_t1.ResumeLayout(false);
             this.textbox_alpha_t1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_inverseK_t1)).EndInit();
-          this.ResumeLayout(false);
-
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_servos_t2)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.ResumeLayout(false);
 
         }
 
@@ -523,7 +497,7 @@
         private System.Windows.Forms.Label label_legnumber_t1;
         private System.Windows.Forms.TextBox textbox_gamma_t1;
         private System.Windows.Forms.TextBox textbox_beta_t1;
-        private System.Windows.Forms.TextBox textBox1;
+    //    private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button_applyChanges_t1;
 
 
