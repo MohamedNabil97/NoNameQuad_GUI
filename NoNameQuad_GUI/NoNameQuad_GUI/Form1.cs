@@ -16,5 +16,15 @@ namespace NoNameQuad_GUI
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Serv180_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
