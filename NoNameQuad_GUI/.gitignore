@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io/api/visualstudio,visualstudiocode
 
+bin/
+obj/
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
