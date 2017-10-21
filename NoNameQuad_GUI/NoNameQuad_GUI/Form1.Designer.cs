@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.textbox_alpha_t1 = new System.Windows.Forms.TextBox();
             this.pictureBox_inverseK_t1 = new System.Windows.Forms.PictureBox();
             this.comboBox_legNumber_t1 = new System.Windows.Forms.ComboBox();
             this.comboBox_servo_t1 = new System.Windows.Forms.ComboBox();
@@ -43,6 +44,7 @@
             this.textbox_beta_t1 = new System.Windows.Forms.TextBox();
             this.button_applyChanges_t1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.textbox_xHold_t2 = new System.Windows.Forms.TextBox();
             this.pictureBox_servos_t2 = new System.Windows.Forms.PictureBox();
             this.comboBox_legChoice_t2 = new System.Windows.Forms.ComboBox();
             this.button_apply_t2 = new System.Windows.Forms.Button();
@@ -65,8 +67,6 @@
             this.label_Serv90_t3 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.textbox_xHold_t2 = new System.Windows.Forms.TextBox();
-            this.textbox_alpha_t1 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_inverseK_t1)).BeginInit();
@@ -109,6 +109,14 @@
             this.tabPage1.Text = "Servo Control";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // textbox_alpha_t1
+            // 
+            this.textbox_alpha_t1.Location = new System.Drawing.Point(123, 81);
+            this.textbox_alpha_t1.Name = "textbox_alpha_t1";
+            this.textbox_alpha_t1.Size = new System.Drawing.Size(100, 20);
+            this.textbox_alpha_t1.TabIndex = 25;
+            this.textbox_alpha_t1.UseWaitCursor = true;
+            // 
             // pictureBox_inverseK_t1
             // 
             this.pictureBox_inverseK_t1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_inverseK_t1.Image")));
@@ -140,7 +148,7 @@
             // label_gamma_t1
             // 
             this.label_gamma_t1.AutoSize = true;
-            this.label_gamma_t1.Location = new System.Drawing.Point(21, 155);
+            this.label_gamma_t1.Location = new System.Drawing.Point(21, 148);
             this.label_gamma_t1.Name = "label_gamma_t1";
             this.label_gamma_t1.Size = new System.Drawing.Size(43, 13);
             this.label_gamma_t1.TabIndex = 21;
@@ -150,7 +158,7 @@
             // label_beta_t1
             // 
             this.label_beta_t1.AutoSize = true;
-            this.label_beta_t1.Location = new System.Drawing.Point(30, 113);
+            this.label_beta_t1.Location = new System.Drawing.Point(35, 113);
             this.label_beta_t1.Name = "label_beta_t1";
             this.label_beta_t1.Size = new System.Drawing.Size(29, 13);
             this.label_beta_t1.TabIndex = 20;
@@ -189,7 +197,7 @@
             // 
             // textbox_gamma_t1
             // 
-            this.textbox_gamma_t1.Location = new System.Drawing.Point(123, 155);
+            this.textbox_gamma_t1.Location = new System.Drawing.Point(123, 148);
             this.textbox_gamma_t1.Name = "textbox_gamma_t1";
             this.textbox_gamma_t1.Size = new System.Drawing.Size(100, 20);
             this.textbox_gamma_t1.TabIndex = 16;
@@ -236,6 +244,13 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Inverse Kinematics";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // textbox_xHold_t2
+            // 
+            this.textbox_xHold_t2.Location = new System.Drawing.Point(143, 119);
+            this.textbox_xHold_t2.Name = "textbox_xHold_t2";
+            this.textbox_xHold_t2.Size = new System.Drawing.Size(100, 20);
+            this.textbox_xHold_t2.TabIndex = 14;
             // 
             // pictureBox_servos_t2
             // 
@@ -437,21 +452,6 @@
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(200, 100);
             this.tabPage5.TabIndex = 0;
-            // 
-            // textbox_xHold_t2
-            // 
-            this.textbox_xHold_t2.Location = new System.Drawing.Point(143, 119);
-            this.textbox_xHold_t2.Name = "textbox_xHold_t2";
-            this.textbox_xHold_t2.Size = new System.Drawing.Size(100, 20);
-            this.textbox_xHold_t2.TabIndex = 14;
-            // 
-            // textbox_alpha_t1
-            // 
-            this.textbox_alpha_t1.Location = new System.Drawing.Point(123, 81);
-            this.textbox_alpha_t1.Name = "textbox_alpha_t1";
-            this.textbox_alpha_t1.Size = new System.Drawing.Size(100, 20);
-            this.textbox_alpha_t1.TabIndex = 25;
-            this.textbox_alpha_t1.UseWaitCursor = true;
             // 
             // Form1
             // 
