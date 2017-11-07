@@ -67,6 +67,8 @@
             this.label_Serv90_t3 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.checkbox_leg_t1 = new System.Windows.Forms.CheckBox();
+            this.checkbox_servo_t1 = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_inverseK_t1)).BeginInit();
@@ -89,6 +91,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.checkbox_servo_t1);
+            this.tabPage1.Controls.Add(this.checkbox_leg_t1);
             this.tabPage1.Controls.Add(this.textbox_alpha_t1);
             this.tabPage1.Controls.Add(this.pictureBox_inverseK_t1);
             this.tabPage1.Controls.Add(this.comboBox_legNumber_t1);
@@ -111,7 +115,7 @@
             // 
             // textbox_alpha_t1
             // 
-            this.textbox_alpha_t1.Location = new System.Drawing.Point(123, 81);
+            this.textbox_alpha_t1.Location = new System.Drawing.Point(114, 81);
             this.textbox_alpha_t1.Name = "textbox_alpha_t1";
             this.textbox_alpha_t1.Size = new System.Drawing.Size(100, 20);
             this.textbox_alpha_t1.TabIndex = 25;
@@ -120,7 +124,7 @@
             // pictureBox_inverseK_t1
             // 
             this.pictureBox_inverseK_t1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_inverseK_t1.Image")));
-            this.pictureBox_inverseK_t1.Location = new System.Drawing.Point(327, 6);
+            this.pictureBox_inverseK_t1.Location = new System.Drawing.Point(326, 21);
             this.pictureBox_inverseK_t1.Name = "pictureBox_inverseK_t1";
             this.pictureBox_inverseK_t1.Size = new System.Drawing.Size(247, 214);
             this.pictureBox_inverseK_t1.TabIndex = 24;
@@ -130,18 +134,27 @@
             // comboBox_legNumber_t1
             // 
             this.comboBox_legNumber_t1.FormattingEnabled = true;
+            this.comboBox_legNumber_t1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
             this.comboBox_legNumber_t1.Location = new System.Drawing.Point(114, 21);
             this.comboBox_legNumber_t1.Name = "comboBox_legNumber_t1";
-            this.comboBox_legNumber_t1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_legNumber_t1.Size = new System.Drawing.Size(100, 21);
             this.comboBox_legNumber_t1.TabIndex = 23;
             this.comboBox_legNumber_t1.UseWaitCursor = true;
             // 
             // comboBox_servo_t1
             // 
             this.comboBox_servo_t1.FormattingEnabled = true;
+            this.comboBox_servo_t1.Items.AddRange(new object[] {
+            "Coxa",
+            "Femur",
+            "Tibia"});
             this.comboBox_servo_t1.Location = new System.Drawing.Point(114, 51);
             this.comboBox_servo_t1.Name = "comboBox_servo_t1";
-            this.comboBox_servo_t1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_servo_t1.Size = new System.Drawing.Size(100, 21);
             this.comboBox_servo_t1.TabIndex = 22;
             this.comboBox_servo_t1.UseWaitCursor = true;
             // 
@@ -197,7 +210,7 @@
             // 
             // textbox_gamma_t1
             // 
-            this.textbox_gamma_t1.Location = new System.Drawing.Point(123, 148);
+            this.textbox_gamma_t1.Location = new System.Drawing.Point(114, 148);
             this.textbox_gamma_t1.Name = "textbox_gamma_t1";
             this.textbox_gamma_t1.Size = new System.Drawing.Size(100, 20);
             this.textbox_gamma_t1.TabIndex = 16;
@@ -205,7 +218,7 @@
             // 
             // textbox_beta_t1
             // 
-            this.textbox_beta_t1.Location = new System.Drawing.Point(123, 113);
+            this.textbox_beta_t1.Location = new System.Drawing.Point(114, 113);
             this.textbox_beta_t1.Name = "textbox_beta_t1";
             this.textbox_beta_t1.Size = new System.Drawing.Size(100, 20);
             this.textbox_beta_t1.TabIndex = 15;
@@ -265,6 +278,11 @@
             // comboBox_legChoice_t2
             // 
             this.comboBox_legChoice_t2.FormattingEnabled = true;
+            this.comboBox_legChoice_t2.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
             this.comboBox_legChoice_t2.Location = new System.Drawing.Point(143, 18);
             this.comboBox_legChoice_t2.Name = "comboBox_legChoice_t2";
             this.comboBox_legChoice_t2.Size = new System.Drawing.Size(100, 21);
@@ -453,6 +471,26 @@
             this.tabPage5.Size = new System.Drawing.Size(200, 100);
             this.tabPage5.TabIndex = 0;
             // 
+            // checkbox_leg_t1
+            // 
+            this.checkbox_leg_t1.AutoSize = true;
+            this.checkbox_leg_t1.Location = new System.Drawing.Point(247, 27);
+            this.checkbox_leg_t1.Name = "checkbox_leg_t1";
+            this.checkbox_leg_t1.Size = new System.Drawing.Size(63, 17);
+            this.checkbox_leg_t1.TabIndex = 26;
+            this.checkbox_leg_t1.Text = "All Legs";
+            this.checkbox_leg_t1.UseVisualStyleBackColor = true;
+            // 
+            // checkbox_servo_t1
+            // 
+            this.checkbox_servo_t1.AutoSize = true;
+            this.checkbox_servo_t1.Location = new System.Drawing.Point(247, 55);
+            this.checkbox_servo_t1.Name = "checkbox_servo_t1";
+            this.checkbox_servo_t1.Size = new System.Drawing.Size(73, 17);
+            this.checkbox_servo_t1.TabIndex = 27;
+            this.checkbox_servo_t1.Text = "All Servos";
+            this.checkbox_servo_t1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -520,6 +558,8 @@
         private System.Windows.Forms.Button button_applyChanges_t1;
         private System.Windows.Forms.TextBox textbox_xHold_t2;
         private System.Windows.Forms.TextBox textbox_alpha_t1;
+        private System.Windows.Forms.CheckBox checkbox_servo_t1;
+        private System.Windows.Forms.CheckBox checkbox_leg_t1;
     }
 }
 
