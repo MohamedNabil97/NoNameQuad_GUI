@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.checkbox_servo_t1 = new System.Windows.Forms.CheckBox();
+            this.checkbox_leg_t1 = new System.Windows.Forms.CheckBox();
             this.textbox_alpha_t1 = new System.Windows.Forms.TextBox();
             this.pictureBox_inverseK_t1 = new System.Windows.Forms.PictureBox();
             this.comboBox_legNumber_t1 = new System.Windows.Forms.ComboBox();
@@ -67,8 +69,6 @@
             this.label_Serv90_t3 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.checkbox_leg_t1 = new System.Windows.Forms.CheckBox();
-            this.checkbox_servo_t1 = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_inverseK_t1)).BeginInit();
@@ -112,6 +112,26 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Servo Control";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // checkbox_servo_t1
+            // 
+            this.checkbox_servo_t1.AutoSize = true;
+            this.checkbox_servo_t1.Location = new System.Drawing.Point(247, 55);
+            this.checkbox_servo_t1.Name = "checkbox_servo_t1";
+            this.checkbox_servo_t1.Size = new System.Drawing.Size(73, 17);
+            this.checkbox_servo_t1.TabIndex = 27;
+            this.checkbox_servo_t1.Text = "All Servos";
+            this.checkbox_servo_t1.UseVisualStyleBackColor = true;
+            // 
+            // checkbox_leg_t1
+            // 
+            this.checkbox_leg_t1.AutoSize = true;
+            this.checkbox_leg_t1.Location = new System.Drawing.Point(247, 27);
+            this.checkbox_leg_t1.Name = "checkbox_leg_t1";
+            this.checkbox_leg_t1.Size = new System.Drawing.Size(63, 17);
+            this.checkbox_leg_t1.TabIndex = 26;
+            this.checkbox_leg_t1.Text = "All Legs";
+            this.checkbox_leg_t1.UseVisualStyleBackColor = true;
             // 
             // textbox_alpha_t1
             // 
@@ -233,6 +253,7 @@
             this.button_applyChanges_t1.Text = "Apply Changes";
             this.button_applyChanges_t1.UseVisualStyleBackColor = true;
             this.button_applyChanges_t1.UseWaitCursor = true;
+            this.button_applyChanges_t1.Click += new System.EventHandler(this.button_applyChanges_t1_Click);
             // 
             // tabPage2
             // 
@@ -296,6 +317,7 @@
             this.button_apply_t2.TabIndex = 11;
             this.button_apply_t2.Text = "Apply Changes";
             this.button_apply_t2.UseVisualStyleBackColor = true;
+            this.button_apply_t2.Click += new System.EventHandler(this.button_apply_t2_Click);
             // 
             // textbox_zHold_t2
             // 
@@ -470,26 +492,6 @@
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(200, 100);
             this.tabPage5.TabIndex = 0;
-            // 
-            // checkbox_leg_t1
-            // 
-            this.checkbox_leg_t1.AutoSize = true;
-            this.checkbox_leg_t1.Location = new System.Drawing.Point(247, 27);
-            this.checkbox_leg_t1.Name = "checkbox_leg_t1";
-            this.checkbox_leg_t1.Size = new System.Drawing.Size(63, 17);
-            this.checkbox_leg_t1.TabIndex = 26;
-            this.checkbox_leg_t1.Text = "All Legs";
-            this.checkbox_leg_t1.UseVisualStyleBackColor = true;
-            // 
-            // checkbox_servo_t1
-            // 
-            this.checkbox_servo_t1.AutoSize = true;
-            this.checkbox_servo_t1.Location = new System.Drawing.Point(247, 55);
-            this.checkbox_servo_t1.Name = "checkbox_servo_t1";
-            this.checkbox_servo_t1.Size = new System.Drawing.Size(73, 17);
-            this.checkbox_servo_t1.TabIndex = 27;
-            this.checkbox_servo_t1.Text = "All Servos";
-            this.checkbox_servo_t1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
