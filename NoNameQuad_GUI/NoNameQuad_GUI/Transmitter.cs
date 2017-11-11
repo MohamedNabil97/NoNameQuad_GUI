@@ -45,6 +45,7 @@ namespace NoNameQuad_GUI
             }
 
         }
+       
         public void SendArrayByte(byte[] x)
         {
             if (!serialPort.IsOpen)
