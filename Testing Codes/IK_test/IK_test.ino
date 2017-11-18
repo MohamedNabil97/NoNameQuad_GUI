@@ -4,23 +4,22 @@
 #define f0 42
 #define t0 44
 
-
 double Fix_Angle(double x){
   if(x<-1) return -1;
   if(x>1) return 1;
   return x;
-  
 }
-const double Femur_Length= 92.852  ;
+
+const double Femur_Length= 92.852;
 const double Tibia_Length= 164.695;
-const double Coxa_Length= 23;
+const double Coxa_Length= 23; //not final dimension
 double Leg_Length;
+
 Servo C0;
 Servo F0;
 Servo T0;
 
 double adjust(double x){
-
   if(x>180){
     return 360-x;
   }
@@ -29,11 +28,10 @@ double adjust(double x){
 
 
 double todeg(double rad){
-
   double ret = rad*180/PI;
-
   return ret;
 }
+
 void ik (double x, double y, double z){
   double coxa_angle;
   double femur_angle;
